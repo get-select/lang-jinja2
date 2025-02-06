@@ -1,5 +1,5 @@
 {
-  "name": "codemirror-lang-jinja2",
+  "name": "@get-select/codemirror-lang-jinja2",
   "version": "0.1.0",
   "description": "jinja2 language support for CodeMirror",
   "scripts": {
