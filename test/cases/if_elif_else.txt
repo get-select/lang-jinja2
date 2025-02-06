@@ -1,0 +1,21 @@
+# Control Structures - If-Elif-Else
+
+{% if user %}
+  Hello user
+{% elif guest %}
+  Hello guest
+{% else %}
+  Please login
+{% endif %}
+
+==>
+
+Template(
+  CodeBlock("{%", CodeTag, CodeTag, Identifier, "%}"),
+  PlainText,
+  CodeBlock("{%", Identifier, Identifier, "%}"),
+  PlainText,
+  CodeBlock("{%", CodeTag, "%}"),
+  PlainText,
+  CodeBlock("{%", CodeTag, "%}")
+)

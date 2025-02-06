@@ -1,0 +1,16 @@
+# Template Inheritance
+
+{% extends "base.html" %}
+{% block content %}
+  <h1>Title</h1>
+{% endblock %}
+
+==>
+
+Template(
+  CodeBlock("{%", CodeTag, String, "%}"),
+  PlainText,
+  CodeBlock("{%", CodeTag, Identifier, "%}"),
+  PlainText,
+  CodeBlock("{%", CodeTag, "%}")
+)
