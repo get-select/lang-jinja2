@@ -1,0 +1,15 @@
+# Formatters
+
+{{ name|upper }}
+{{ name|trim }}
+{{ name|upper|trim }}
+
+==>
+
+Template(
+  InsertBlock("{{", Identifier, Operator, Identifier, "}}"),
+  PlainText,
+  InsertBlock("{{", Identifier, Operator, Identifier, "}}"),
+  PlainText,
+  InsertBlock("{{", Identifier, Operator, Identifier, Operator, Identifier, "}}")
+)
