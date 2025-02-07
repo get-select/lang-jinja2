@@ -15,3 +15,5 @@ The current release is mostly a copy of the above twig implementation, and some 
 
 # Support & Contributing
 It's unlikely we will add any missing features to this package, as our usecase is fairly simple, but are open to pull requests!
+
+New features should include test cases in `test/cases` directory.
