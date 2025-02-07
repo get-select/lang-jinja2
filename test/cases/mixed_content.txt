@@ -1,0 +1,7 @@
+# Mixed Content
+
+Hello {{ user }}!
+
+==>
+
+Template(PlainText,InsertBlock("{{",CodeTag,Identifier,"}}"),PlainText)

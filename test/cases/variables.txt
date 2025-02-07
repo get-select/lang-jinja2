@@ -1,0 +1,15 @@
+# Variables
+
+{{ user }}
+{{ user.name }}
+{{ dict['key'] }}
+
+==>
+
+Template(
+  InsertBlock("{{", CodeTag, Identifier, "}}"),
+  PlainText,
+  InsertBlock("{{", CodeTag, ChainedIdentifier, "}}"),
+  PlainText,
+  InsertBlock("{{", Identifier, Array(String), "}}")
+)

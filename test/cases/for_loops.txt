@@ -1,0 +1,14 @@
+# For Loops
+
+{% for item in items %}
+  {{ item.name }}
+{% endfor %}
+
+==>
+
+Template(CodeBlock("{%",CodeTag,Identifier,Comparison,Identifier,"%}"),
+  PlainText,
+  InsertBlock("{{",ChainedIdentifier,"}}"),
+  PlainText,
+  CodeBlock("{%",CodeTag,"%}")
+)

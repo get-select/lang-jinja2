@@ -1,21 +1,19 @@
 # CodeMirror 6 language package template
 
-This is an example repository containing a minimal [CodeMirror](https://codemirror.net/6/) language support package. The idea is to clone it, rename it, and edit it to create support for a new language.
+Basic codemirror 6 language support for jinja2, using a lezer grammar.
 
-Things you'll need to do (see the [language support example](https://codemirror.net/6/examples/lang-package/) for a more detailed tutorial):
+Project starts from [lang-example](https://github.com/codemirror/lang-example) and draws inspirartion from [lang-jinja2](https://github.com/sdvinfo/lang-jinja2), which pins older versions its dependencies and [codemirror-lang-twig](https://github.com/ssddanbrown/codemirror-lang-twig), which is a more fully featured implementation of twig which is very similar to jinja2.
 
- * `git grep EXAMPLE` and replace all instances with your language name.
 
- * Rewrite the grammar in `src/syntax.grammar` to cover your language. See the [Lezer system guide](https://lezer.codemirror.net/docs/guide/#writing-a-grammar) for information on this file format.
+Not listed on npm, but can be installed with `npm i https://github.com/get-select/lang-jinja2` 
 
- * Adjust the metadata in `src/index.ts` to work with your new grammar.
+# Notable Shortcomings
+The current release is mostly a copy of the above twig implementation, and some jinja2 features may be missing:
+- The {% raw %} tag isn't properly supported
+- `[]` style variables access isn't supported `{{user['name']}}`
 
- * Adjust the grammar tests in `test/cases.txt`.
 
- * Build (`npm run prepare`) and test (`npm test`).
+# Support & Contributing
+It's unlikely we will add any missing features to this package, as our usecase is fairly simple, but are open to pull requests!
 
- * Rewrite this readme file.
-
- * Optionally add a license.
-
- * Publish. Put your package on npm under a name like `codemirror-lang-EXAMPLE`.
+New features should include test cases in `test/cases` directory.

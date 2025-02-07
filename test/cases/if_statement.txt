@@ -1,0 +1,13 @@
+# Control Structures - If
+
+{% if user %}
+  Hello
+{% endif %}
+
+==>
+
+Template(
+  CodeBlock("{%", CodeTag, CodeTag, Identifier, "%}"),
+  PlainText,
+  CodeBlock("{%", CodeTag, "%}")
+)
